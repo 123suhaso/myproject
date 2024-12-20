@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student</title>
 </head>
+
 <body>
-    {}
+    
+  {}
 {% for student in students %}
-<h1><li style='color: {% cycle 'red' 'green' 'blue' 'pink' %}'>
+<h1><li style='color: {% cycle 'green' 'blue' 'pink' 'yellow'%}'>
     Hi, {{student.name}} - {{ student.name|length|add:"0" }}
     </li></h1>
-    {# comment #}
 {% endfor %}
 {% if students %}
     <p>We have {{ students|length }} students.</p>
 {% else %}
-    <p>No students found.</p>
+    <p>featur developer are not.</p>
 {% endif %}
 
 {% filter upper %}

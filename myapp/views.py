@@ -15,6 +15,7 @@ def index(request):
 def get_students(request):
       if request.method == 'GET':
           try:
+
             students = Student.objects.all().values('name', 'city')
     
             return JsonResponse({'students': list(students)})
