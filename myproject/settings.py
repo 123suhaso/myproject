@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["myproject-h15r.onrender.com"]
 
+CSRF_TRUSTED_ORIGINS = ["https://myproject-h15r.onrender.com"]
+
 
 # Application definition
 
